@@ -134,8 +134,17 @@
   /* герой */
   .hero {
     background-color: var(--title-text-color);
-
-
+    height: 600px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+   url('../images/hero.jpg');
+  
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .hero .container {
@@ -224,6 +233,32 @@
   .feature-list {
     display: flex;
   }
+    .feature-list .item::before{
+      content: "";
+      display: inline-block;
+      background-color: var(--primary-white-color);
+      height: 112px;
+      width: 264px;
+      background-repeat: no-repeat;
+      background-position: center;
+     
+ }
+ .item.icon-antenna::before{
+   background-image: url('../images/advantage-1.svg');
+
+   }
+
+  .item.icon-clock::before {
+  background-image: url('../images/advantage-2.svg');
+  }
+.item.icon-diagram::before {
+  background-image: url('../images/advantage-3.svg');
+
+}
+.item.icon-astronaut::before {
+  background-image: url('../images/advantage-4.svg');
+
+}
 
   .feature-list .item+.item {
     margin-left: 24px;
@@ -387,6 +422,7 @@
     color: var(--primary-fon-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
   .section-button .item+.item {
