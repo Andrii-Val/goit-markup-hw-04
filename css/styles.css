@@ -233,7 +233,7 @@
   .feature-list {
     display: flex;
   }
-    .feature-list .item::before{
+ .feature-list .item::before{
       content: "";
       display: inline-block;
       background-color: var(--primary-white-color);
@@ -301,6 +301,46 @@
     height: 56px;
     background-color: #fff;
   }
+.customers.list{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.customers .item{
+  border: 1px solid var(--title-text-color);
+  border-radius: 5px;
+}
+.customers .item + .item{
+margin-left: 24px;
+}
+
+   .customer::before{
+    content: "";
+      display: inline-block;
+    width: 168px;
+    height: 88px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   }
+.customer.client-1::before{
+  background-image: url('../images/logo-1.svg');
+}
+.customer.client-2::before {
+  background-image: url('../images/logo-2.svg');
+}
+.customer.client-3::before {
+  background-image: url('../images/logo-3.svg');
+}
+.customer.client-4::before {
+  background-image: url('../images/logo-4.svg');
+}
+.customer.client-5::before {
+  background-image: url('../images/logo-5.svg');
+}
+.customer.client-6::before {
+  background-image: url('../images/logo-6.svg');
+}
 
   /* вікна силок */
 
@@ -355,7 +395,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-
+ 
   .project {
 
     display: flex;
