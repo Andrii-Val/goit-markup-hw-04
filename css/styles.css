@@ -2,6 +2,7 @@
   /* колір номера#434455 */
   /* колір кнопок #4D5AE5 */
   /* колір фона#F4F4FD */
+  
 
   :root {
     --primary-text-color: #434455;
@@ -270,7 +271,9 @@
     display: flex;
     flex-wrap: wrap;
   }
-
+.work-list .slogan{
+  margin-bottom: 8px;
+}
   .work-list .item+.item {
     margin-left: 24px;
   }
@@ -294,13 +297,45 @@
     background-color: var(--primary-fon-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
       border-radius: 0px 0px 4px 4px;
+      padding-bottom: 32px;
   }
+
+
+.networks-list{
+  list-style: none;
+  display: flex;
+  margin-left: 16px;
+  
+  padding: 0;
+}
+.networks-list .item-network + .item-network{
+  margin-left: 24px;
+}
+  .item-network .network-link{
+    width: 40px;
+    height: 40px;
+    background-color:#4D5AE5;
+    border-radius: 50%;
+    display: block;
+    padding: 12px;
+  }
+    .item-network .network-link:hover
+    .item-network .network-link:focus{
+      background-color: #404BBF;
+    }
+
+    .network-link .network-logo{
+      fill:#FFFFFF;
+    }
+/* thyhy */
 
   .item .team {
     width: 232px;
     height: 56px;
     background-color: #fff;
   }
+
+  
 .customers.list{
   display: flex;
   margin-left: auto;
@@ -309,39 +344,30 @@
 .customers .item{
   border: 1px solid var(--primary-text-color);
   border-radius: 5px;
+  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
 }
 .customers .item + .item{
 margin-left: 24px;
 }
 
-   .customer::before{
+   .item .customer{
     content: "";
       display: inline-block;
     width: 168px;
     height: 88px;
     background-repeat: no-repeat;
     background-position: center;
+    fill: #4D5AE5;
 
    }
-.customer.client-1::before{
-  background-image: url('../images/icons.svg/logo-1.svg');
-}
-.customer.client-2::before {
-  background-image: url('../images/icons.svg/logo-2.svg');
-}
-.customer.client-3::before {
-  background-image: url('../images/icons.svg/logo-3.svg');
-}
-.customer.client-4::before {
-  background-image: url('../images/icons.svg/logo-4.svg');
-}
-.customer.client-5::before {
-  background-image: url('../images/icons.svg/logo-5.svg');
-}
-.customer.client-6::before {
-  background-image: url('../images/icons.svg/logo-6.svg');
-}
-
+      .customer .customer-logo{
+      fill:#8E8F99;
+     }
+   .customer .customer-logo:hover {
+     fill: var(--accent-color);
+   }
   /* вікна силок */
 
   .slogan {
@@ -484,58 +510,4 @@ margin-left: 24px;
 
     justify-content: center;
   }
-  .footer-networks{
-    color: red;
-    text-decoration: none;
-    margin-left: 120px;
-    margin-right: auto;
-  }
-    .icons-footer{
-      display: flex; 
-      list-style: none;
-      
-  }    
-    .icons-footer .item{
-      display: block;
-      height: 70px;
-    }
-  .icon-networks{
-    color: #fff;
-    text-decoration: none;
-     
-       background-color: aqua;
-    }
-    .icons-footer .item + .item{
-      margin-left: 35px;
-    }
-    .grgt{
-      width: 50px;
-      height: 50px;
-      color: red;
-    }
-   
-     
   
-
-
-
-
-
-    .item .icons{
-      border-radius: 50%;
-      background-color: var(--accent-color);
-      width: 40px;
-      height: 40px;
-      display: block;
-      fill: red;
-      color: aqua;
-    }
-    .qwe{
-      fill: #fff;
-      
-    }
-        .customer-logo{
-          fill: red;
-          
-
-        }
