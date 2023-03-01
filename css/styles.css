@@ -180,6 +180,7 @@
     padding-right: 32px;
     padding-bottom: 16px;
     padding-left: 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 
   /* секції */
@@ -244,19 +245,19 @@
      
  }
  .item.icon-antenna::before{
-   background-image: url('../images/advantage-1.svg');
+   background-image: url('../images/icons.svg/advantage-1.svg');
 
    }
 
   .item.icon-clock::before {
-  background-image: url('../images/advantage-2.svg');
+  background-image: url('../images/icons.svg/advantage-2.svg');
   }
 .item.icon-diagram::before {
-  background-image: url('../images/advantage-3.svg');
+  background-image: url('../images/icons.svg/advantage-3.svg');
 
 }
 .item.icon-astronaut::before {
-  background-image: url('../images/advantage-4.svg');
+  background-image: url('../images/icons.svg/advantage-4.svg');
 
 }
 
@@ -326,22 +327,22 @@ margin-left: 24px;
 
    }
 .customer.client-1::before{
-  background-image: url('../images/logo-1.svg');
+  background-image: url('../images/icons.svg/logo-1.svg');
 }
 .customer.client-2::before {
-  background-image: url('../images/logo-2.svg');
+  background-image: url('../images/icons.svg/logo-2.svg');
 }
 .customer.client-3::before {
-  background-image: url('../images/logo-3.svg');
+  background-image: url('../images/icons.svg/logo-3.svg');
 }
 .customer.client-4::before {
-  background-image: url('../images/logo-4.svg');
+  background-image: url('../images/icons.svg/logo-4.svg');
 }
 .customer.client-5::before {
-  background-image: url('../images/logo-5.svg');
+  background-image: url('../images/icons.svg/logo-5.svg');
 }
 .customer.client-6::before {
-  background-image: url('../images/logo-6.svg');
+  background-image: url('../images/icons.svg/logo-6.svg');
 }
 
   /* вікна силок */
